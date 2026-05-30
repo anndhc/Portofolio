@@ -16,8 +16,8 @@ const nunito = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Zakia Azharrifa Kn | UI/UX Designer",
-  description: "Portfolio of Zakia Azharrifa Kn, UI/UX Designer specializing in intuitive and visually appealing interfaces.",
+  title: "Anindha Cahya M.S | UI/UX Designer",
+  description: "Portfolio of Anindha Cahya M.S, UI/UX Designer specializing in intuitive and visually appealing interfaces.",
 };
 
 export default function RootLayout({
