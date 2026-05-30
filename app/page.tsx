@@ -38,6 +38,7 @@ export default function Portfolio() {
       caseStudy: "Streamlining academic management through a structured and responsive web interface.",
       image: "/web.webp",
       href: "https://www.figma.com/design/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=0-1&t=mFtUG9RNbLfBbvMh-1",
+      prototypeHref: "https://www.figma.com/proto/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=333-402&p=f&t=ysLDevner2pAVE57-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A2768&show-proto-sidebar=1",
       year: "2024",
       tags: ["Web", "UI/UX"]
     },
@@ -47,6 +48,7 @@ export default function Portfolio() {
       caseStudy: "Bringing academic scheduling to students' fingertips with an intuitive mobile experience.",
       image: "/potensiapp.webp",
       href: "https://www.figma.com/design/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=370-776&t=mFtUG9RNbLfBbvMh-1",
+      prototypeHref: "https://www.figma.com/proto/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=370-763&p=f&t=zuFHYUJ9Zg411IpB-1&scaling=scale-down&content-scaling=fixed&page-id=117%3A2&starting-point-node-id=370%3A763&show-proto-sidebar=1",
       year: "2024",
       tags: ["Mobile", "UI/UX"]
     },
@@ -56,6 +58,7 @@ export default function Portfolio() {
       caseStudy: "Enhancing daily attendance tracking with intuitive mobile interactions and clear visualization.",
       image: "/sipmas.webp",
       href: "https://www.figma.com/design/fZcSNDk91MkFdcdGkPNSpc/Design-SIPMAS?node-id=0-1&t=p221A2qxSJh2TOoH-1",
+      prototypeHref: "https://www.figma.com/proto/fZcSNDk91MkFdcdGkPNSpc/Design-SIPMAS?node-id=90-5249&p=f&t=hjXoJ6bW69BCUPjX-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=90%3A5249",
       year: "2025",
       tags: ["Mobile UI/UX", "System Analysis"]
     },
@@ -364,15 +367,26 @@ export default function Portfolio() {
                     {project.description}
                   </p>
                 </div>
-
-                <Link
-                  href={project.href}
-                  target={project.href.startsWith("http") ? "_blank" : undefined}
-                  rel={project.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-foreground hover:text-accent transition-colors w-fit pb-1 border-b border-foreground/30 hover:border-accent mt-4 group/btn"
-                >
-                  View More <span className="transform transition-transform group-hover/btn:translate-x-2">→</span >
-                </Link>
+                <div className="flex w-full justify-between gap-4 mt-4">
+                  <Link
+                    href={project.href}
+                    target={project.href.startsWith("http") ? "_blank" : undefined}
+                    rel={project.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-widest text-accent bg-accent/10 border border-accent/20 hover:bg-accent hover:text-background active:bg-background active:text-accent active:scale-95 transition-all duration-300"
+                  >
+                    View Design
+                  </Link>
+                  {project.prototypeHref && (
+                    <Link
+                      href={project.prototypeHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-widest text-accent bg-accent/10 border border-accent/20 hover:bg-accent hover:text-background active:bg-background active:text-accent active:scale-95 transition-all duration-300"
+                    >
+                      View Prototype
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           ))}
