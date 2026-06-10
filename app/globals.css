@@ -79,3 +79,41 @@ body {
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+/* Print optimizations for saving to PDF */
+@media print {
+  /* Force exact color adjustment to keep backgrounds and dark themes */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  /* Reset animations and transitions so they don't hide content in PDF */
+  .reveal,
+  .animate-float,
+  [class*="transition"] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Hide sticky navigation and background decorative elements */
+  nav, 
+  .pointer-events-none.overflow-hidden.z-0 {
+    display: none !important;
+  }
+
+  /* Prevent page breaks inside important containers */
+  section,
+  .group {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Ensure background body rendering doesn't get clipped */
+  body {
+    overflow: visible !important;
+    height: auto !important;
+  }
+}

@@ -34,8 +34,25 @@ export default function Portfolio() {
   const projects = [
     {
       title: "POTENSI Web Portal",
-      description: "A web-based integrated platform designed to manage and synchronize academic schedules and time enrollment efficiently.",
-      caseStudy: "Streamlining academic management through a structured and responsive web interface.",
+      description: (
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="font-semibold text-foreground/90">Tantangan & Solusi:</span>
+            <span>Pengelolaan jadwal akademik dan pencatatan waktu kuliah yang terpisah sering kali memicu ketidaksinkronan data. POTENSI hadir menyatukan integrasi sistem penjadwalan dan time enrollment ke dalam satu platform web yang responsif dan terstruktur.</span>
+            <span className="mt-2">Untuk memastikan antarmuka yang ramah pengguna, proses desain diawali dengan pemetaan alur pengguna yang komprehensif. Pendekatan ini memungkinkan terciptanya struktur navigasi web yang logis dan responsif, memastikan setiap mahasiswa dapat melakukan penjadwalan tanpa kendala.</span>
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="font-semibold text-foreground/90">Peran & Fokus Teknis:</span>
+            <ul className="list-disc pl-4 flex flex-col gap-1 mt-1">
+              <li><span className="font-medium text-foreground/90">Peran:</span> UI/UX Designer</li>
+              <li><span className="font-medium text-foreground/90">Tools:</span> Figma, Miro</li>
+              <li><span className="font-medium text-foreground/90">Pemodelan Sistem:</span> User Flow Mapping, Information Architecture</li>
+              <li><span className="font-medium text-foreground/90">Fokus UX:</span> Responsive Web Design, Kemudahan Registrasi Jadwal</li>
+            </ul>
+          </div>
+        </div>
+      ),
+      caseStudy: "",
       image: "/web.webp",
       href: "https://www.figma.com/design/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=0-1&t=mFtUG9RNbLfBbvMh-1",
       prototypeHref: "https://www.figma.com/proto/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=333-402&p=f&t=ysLDevner2pAVE57-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A2768&show-proto-sidebar=1",
@@ -44,8 +61,25 @@ export default function Portfolio() {
     },
     {
       title: "POTENSI Mobile",
-      description: "A mobile version of the enrollment system, tailored for students to access and track their academic schedules on the go.",
-      caseStudy: "Bringing academic scheduling to students' fingertips with an intuitive mobile experience.",
+      description: (
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="font-semibold text-foreground/90">Tantangan & Solusi:</span>
+            <span>Mahasiswa membutuhkan akses cepat dan fleksibel untuk melihat jadwal dan melakukan pencatatan akademik di mana saja. POTENSI Mobile hadir sebagai solusi berbasis aplikasi yang memberikan pengalaman responsif dan intuitif agar jadwal akademik selalu dalam genggaman.</span>
+            <span className="mt-2">Pengembangan difokuskan pada optimalisasi layar berukuran kecil melalui tata letak yang bersih dan navigasi satu tangan yang efisien. Dengan desain yang ringkas, interaksi mahasiswa terhadap informasi akademik menjadi lebih personal dan cepat diakses.</span>
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="font-semibold text-foreground/90">Peran & Fokus Teknis:</span>
+            <ul className="list-disc pl-4 flex flex-col gap-1 mt-1">
+              <li><span className="font-medium text-foreground/90">Peran:</span> UI/UX Designer</li>
+              <li><span className="font-medium text-foreground/90">Tools:</span> Figma, Miro</li>
+              <li><span className="font-medium text-foreground/90">Pemodelan Sistem:</span> User Flow Mapping, Task Analysis</li>
+              <li><span className="font-medium text-foreground/90">Fokus UX:</span> Mobile App Design, Navigasi Intuitif</li>
+            </ul>
+          </div>
+        </div>
+      ),
+      caseStudy: "",
       image: "/potensiapp.webp",
       href: "https://www.figma.com/design/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=370-776&t=mFtUG9RNbLfBbvMh-1",
       prototypeHref: "https://www.figma.com/proto/V1wJyyA9sdmcXu0oVkdMAa/Potensi-Design?node-id=370-763&p=f&t=zuFHYUJ9Zg411IpB-1&scaling=scale-down&content-scaling=fixed&page-id=117%3A2&starting-point-node-id=370%3A763&show-proto-sidebar=1",
@@ -54,8 +88,25 @@ export default function Portfolio() {
     },
     {
       title: "SIPMAS",
-      description: "A mobile-based attendance information system featuring detailed system mapping to simplify student tracking processes.",
-      caseStudy: "Enhancing daily attendance tracking with intuitive mobile interactions and clear visualization.",
+      description: (
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="font-semibold text-foreground/90">Tantangan & Solusi:</span>
+            <span>Proses pengaduan fasilitas atau layanan di lingkungan kampus sering kali membingungkan, lambat, dan kurang transparan bagi mahasiswa. SIPMAS hadir menyelesaikan masalah ini dengan menyediakan platform digital terstruktur, di mana mahasiswa dapat mengirimkan laporan keluhan secara instan dan memantau status tindak lanjutnya langsung dari pihak kampus secara real-time.</span>
+            <span className="mt-2">Untuk memastikan pengalaman pengguna yang lancar, saya tidak hanya merancang tampilan antarmukanya saja, tetapi juga memodelkan seluruh arsitektur sistem dari awal menggunakan Visual Paradigm. Hal ini dilakukan demi memastikan logika sistem yang kuat sebelum diimplementasikan ke dalam mockup visual di Figma.</span>
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="font-semibold text-foreground/90">Peran & Fokus Teknis:</span>
+            <ul className="list-disc pl-4 flex flex-col gap-1 mt-1">
+              <li><span className="font-medium text-foreground/90">Peran:</span> UI/UX Designer & System Analyst</li>
+              <li><span className="font-medium text-foreground/90">Tools:</span> Figma, Visual Paradigm</li>
+              <li><span className="font-medium text-foreground/90">Pemodelan Sistem:</span> Use Case Diagram, Activity Diagram, Arsitektur Sistem</li>
+              <li><span className="font-medium text-foreground/90">Fokus UX:</span> Pemetaan User Flow Mahasiswa, Optimasi Formulir Pengaduan, Transparansi Status Laporan</li>
+            </ul>
+          </div>
+        </div>
+      ),
+      caseStudy: "",
       image: "/sipmas.webp",
       href: "https://www.figma.com/design/fZcSNDk91MkFdcdGkPNSpc/Design-SIPMAS?node-id=0-1&t=p221A2qxSJh2TOoH-1",
       prototypeHref: "https://www.figma.com/proto/fZcSNDk91MkFdcdGkPNSpc/Design-SIPMAS?node-id=90-5249&p=f&t=hjXoJ6bW69BCUPjX-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=90%3A5249",
@@ -360,12 +411,16 @@ export default function Portfolio() {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                  <p className="text-xl text-foreground/90 leading-relaxed font-semibold">
-                    {project.caseStudy}
-                  </p>
-                  <p className="text-base text-foreground/70 leading-relaxed font-normal">
-                    {project.description}
-                  </p>
+                  {project.caseStudy && (
+                    <div className="text-xl text-foreground/90 leading-relaxed font-semibold">
+                      {project.caseStudy}
+                    </div>
+                  )}
+                  {project.description && (
+                    <div className="text-base text-foreground/70 leading-relaxed font-normal">
+                      {project.description}
+                    </div>
+                  )}
                 </div>
                 <div className="flex w-full justify-between gap-4 mt-4">
                   <Link
